@@ -14,5 +14,5 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(routes)
 
 app.listen(3000, () => {
-  console.log('The express sever is listening at http://localhost:3000')
+  console.log('This app is listening at http://localhost:3000')
 })
