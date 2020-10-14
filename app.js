@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars')
 require('./config/mongoose')
 const routes = require('./routes/index')
 
-app.engine('hbs', exphbs({ defaultLayout: 'main', extname: 'hbs' }))
+app.engine('hbs', exphbs({ defaultLayout: 'main', extname: 'hbs', helpers: require('./utils/helpers') }))
 app.set('view engine', 'hbs')
 
 app.use(express.static('public'))
